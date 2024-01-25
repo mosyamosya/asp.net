@@ -1,0 +1,14 @@
+2023-12-14 20:39:27 - Controller: Home, Action: SingUp
+2023-12-14 20:41:13 - Controller: Home, Action: SingUp
+2023-12-14 20:46:49 - Controller: Home, Action: SingUp
+2023-12-14 20:53:47 - Controller: Home, Action: SingUp
+2023-12-14 20:54:53 - Controller: Home, Action: SingUp
+2023-12-14 20:56:10 - Controller: Home, Action: Index
+2023-12-14 20:56:12 - Controller: Home, Action: ShowConsults
+2023-12-14 20:56:13 - Controller: Home, Action: Index
+2023-12-14 20:56:14 - Controller: Home, Action: ShowConsults
+2023-12-14 20:56:15 - Controller: Home, Action: Index
+2023-12-14 20:56:16 - Controller: Home, Action: ShowConsults
+2023-12-14 20:56:32 - Controller: Home, Action: Index
+2023-12-14 20:56:58 - Controller: Home, Action: SingUp
+2023-12-14 20:59:25 - Controller: Home, Action: SingUp

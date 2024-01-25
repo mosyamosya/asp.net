@@ -1,0 +1,42 @@
+﻿@{
+    ViewData["Title"] = "Table of Consults";
+}
+﻿@using ASp_MVC.ViewModels
+@model ShowConsultsViewModel
+
+<h2>Consults List</h2>
+
+@if (Model.Consults.Count() > 0)
+{
+        
+    <table>
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Ім'я</th>
+                <th>Емейл</th>
+                <th>Предмети</th>
+                <th>Дата</th>
+
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var consults in Model.Consults)
+            {
+                <tr>
+                    <td>@consults.Id</td>
+                    <td>@consults.Name</td>
+                    <td>@consults.Email</td>
+                    <td>@consults.Subject</td>
+                    <th>@consults.Date</th>
+
+                </tr>
+            }
+        </tbody>
+    </table>
+        
+}
+else
+{
+    <p> Its seems that there no consulttions. Add consultations <a asp-area="" asp-controller="Home" asp-action="Index">here</a></p>
+}

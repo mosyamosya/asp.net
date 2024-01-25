@@ -1,0 +1,37 @@
+﻿@model Consult
+
+@{
+    ViewBag.Title = "Замовити консультацію";
+}
+
+<h2>Замовити консультацію</h2>
+
+<form method="post" asp-action="Register" >
+    <div >
+        <input type="text" placeholder="Ваше ім'я" asp-for="Name" required>
+        <span asp-validation-for="Name"></span>
+    </div>
+    <div >
+        <input type="email" asp-for="Email" placeholder="Ваша електронна пошта" required>
+        <span asp-validation-for="Email"></span>
+    </div>
+    <div >
+        <label asp-for="Date">Бажана дата консультації</label>
+        <input type="date" asp-for="Date" required>
+        <span asp-validation-for="Date"></span>
+    </div>
+    <div >
+        <label asp-for="Subject">Предмет</label>
+        <select asp-for="Subject" asp-items="ViewBag.Subjects" required>
+            <option value="">Виберіть предмет</option>
+        </select>
+        <span asp-validation-for="Subject" ></span>
+    </div>
+    <button type="submit" >Забронювати</button>
+</form>
+
+<style>
+    div{
+        margin: 10px 5px;
+    }
+</style>
