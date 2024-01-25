@@ -1,0 +1,19 @@
+﻿@{
+    ViewData["Title"] = "Create user";
+}
+@model User
+
+<h2>Create User</h2>
+
+<form asp-action="CreateUser">
+    <div >
+        <input asp-for="FirstName" placeholder="Ім'я" />
+    </div>
+    <div >
+        <input asp-for="LastName" placeholder="Прізвище" />
+    </div>
+    <div>
+        <input asp-for="Age" placeholder="Вік" />
+    </div>
+    <button type="submit">Create</button>
+</form>

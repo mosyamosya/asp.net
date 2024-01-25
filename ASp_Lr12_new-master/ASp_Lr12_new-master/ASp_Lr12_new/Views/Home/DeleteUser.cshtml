@@ -1,0 +1,13 @@
+﻿@{
+    ViewData["Title"] = "Delete User";
+}
+@model User
+
+<h2>Delete User</h2>
+
+
+<form asp-action="DeleteUser" asp-route-id="@Model.Id" method="post">
+    <input type="hidden" asp-for="Id" />
+    <button type="submit" >Delete</button>
+    <a asp-action="ShowUsers">Back to List</a>
+</form>

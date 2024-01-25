@@ -1,0 +1,29 @@
+﻿@{
+    ViewData["Title"] = "Companies";
+}
+
+@model List<Company>
+
+<h1>Companies</h1>
+
+<div class="table-responsive">
+    <table >
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Name</th>
+                <th>YearFounded</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var company in Model)
+            {
+                <tr>
+                    <td>@company.Id</td>
+                    <td>@company.Name</td>
+                    <td>@company.YearFounded</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
