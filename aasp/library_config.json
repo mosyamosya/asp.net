@@ -1,0 +1,56 @@
+{
+  "Books": [
+    {
+      "Name": "Book 1",
+      "Author": "J. Sheppard",
+      "Year published": 2005
+    },
+    {
+      "Name": "Book 2",
+      "Author": "J. Doe",
+      "Year published": 2008
+    },
+    {
+      "Name": "Book 3",
+      "Author": "J. Sheppard",
+      "Year published": 2010
+    }
+  ],
+  "Users": {
+    "self": {
+      "Name": "User_self",
+      "Age":42,
+      "Email": "user_self@example.com"
+    },
+    "0": {
+      "Name": "User 0",
+      "Age": 25,
+      "Email": "user0@example.com"
+    },
+    "1": {
+      "Name": "User 1",
+      "Age": 30,
+      "Email": "user1@example.com"
+    },
+    "2": {
+      "Name": "User 2",
+      "Age": 22,
+      "Email": "user2@example.com"
+    },
+    "3": {
+      "Name": "User 3",
+      "Age": 28,
+      "Email": "user3@example.com"
+    },
+    "4": {
+      "Name": "User 4",
+      "Age": 35,
+      "Email": "user4@example.com"
+    },
+    "5": {
+      "Name": "User 5",
+      "Age": 27,
+      "Email": "user5@example.com"
+    }
+  }
+}

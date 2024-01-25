@@ -1,0 +1,26 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Cookie Form</title>
+</head>
+<body>
+    <h2>Enter Value and Date</h2>
+    <form id="cookieForm">
+        <label for="value">Value:</label>
+        <input type="text" id="value" name="value" required>
+        <br>
+        <label for="date">Date and Time:</label>
+        <input type="datetime-local" id="date" name="date" required>
+        <br>
+        <button type="button" onclick="submitForm()">Submit</button>
+    </form>
+    <script>
+        function submitForm() {
+            var value = document.getElementById("value").value;
+            var date = document.getElementById("date").value;
+            document.cookie = `cookieValue=${value}; expires=${date}`;
+            alert("Cookie set successfully!");
+        }
+    </script>
+</body>
+</html>
